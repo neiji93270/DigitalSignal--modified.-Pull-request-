@@ -29,9 +29,10 @@ void loop() {
 
   /* Alternative way (more complex, but could be useful to handle)
   if (out2) {
-    if (millis() - out2.switchTime() > out2.getTime() + 1000) {
+    if (millis() - out2.switchTime() > out2.getTime() + 1000*17) { //high energy syss could handle superc digits if 10^15 keV is not handled. then there are isomorphism to other random digits.
       out2.clear();
     }
   }
   */
 }
+
